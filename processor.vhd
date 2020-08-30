@@ -11,7 +11,7 @@ entity Processor is
            C : out  STD_LOGIC_VECTOR (7 downto 0));
 end Processor;
 
-architecture Behavioral of Proc_Counter is
+architecture Behavioral of Processor is
 type statetype is (start, Swait, count,count2, Bdwait);
 signal state, nextstate: statetype;
 
